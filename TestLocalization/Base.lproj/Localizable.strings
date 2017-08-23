@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  TestLocalization
+
+  Created by mainul on 8/21/17.
+  Copyright © 2017 mainul. All rights reserved.
+*/
+
+"Hello, Everyone" = "Hello, Everyone";
+"Please like this app" = "Please like this app";
+"Change Language" = "Change Language";
+"Cancel" = "Cancel";

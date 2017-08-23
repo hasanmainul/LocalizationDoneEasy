@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  TestLocalization
+
+  Created by mainul on 8/21/17.
+  Copyright © 2017 mainul. All rights reserved.
+*/
+
+"Please like this app" = "দয়া করে লাইক দিন";
+"Hello, Everyone" = "স্বাগতম সবাইকে";
+"Change Language" = "ভাষা পরিবর্তন";
+"Cancel" = "বাতিল";
