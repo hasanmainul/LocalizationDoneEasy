@@ -45,20 +45,29 @@
                                     <action selector="changeLanguageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0F6-Tv-uoV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQk-YO-hK9">
+                                <rect key="frame" x="166" y="28" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="h3n-56-fad" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5v9-lk-bnk"/>
+                            <constraint firstItem="iQk-YO-hK9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E6C-9P-I3b"/>
                             <constraint firstItem="h3n-56-fad" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GjO-va-XO5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rrS-4h-0ZP" secondAttribute="bottom" constant="20" id="Hn9-4q-D9q"/>
                             <constraint firstItem="rrS-4h-0ZP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z89-yX-5AM"/>
                             <constraint firstItem="cyJ-dh-FG9" firstAttribute="top" secondItem="h3n-56-fad" secondAttribute="bottom" constant="34.5" id="ojd-tO-e8D"/>
                             <constraint firstItem="cyJ-dh-FG9" firstAttribute="centerX" secondItem="h3n-56-fad" secondAttribute="centerX" id="rdh-Gw-8DU"/>
+                            <constraint firstItem="iQk-YO-hK9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="zdR-nn-BvD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5jT-aL-C0b"/>
                     <connections>
                         <outlet property="changeLanguageButton" destination="rrS-4h-0ZP" id="slU-Bo-Phk"/>
+                        <outlet property="currentDateMonthLabel" destination="iQk-YO-hK9" id="Wrg-PW-9K6"/>
                         <outlet property="helloLabel" destination="h3n-56-fad" id="X38-mq-g1c"/>
                         <outlet property="likeThisLabel" destination="cyJ-dh-FG9" id="auX-oi-lLz"/>
                     </connections>

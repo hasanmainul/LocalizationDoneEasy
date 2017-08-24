@@ -16,6 +16,7 @@
 import UIKit
 
 class ViewController: UIViewController, LanguageChangable {
+    @IBOutlet weak var currentDateMonthLabel: UILabel!
     @IBOutlet weak var helloLabel: UILabel!
     @IBOutlet weak var likeThisLabel: UILabel!
     @IBOutlet weak var changeLanguageButton: UIButton!
@@ -26,6 +27,10 @@ class ViewController: UIViewController, LanguageChangable {
         helloLabel.text = "Hello, Everyone".localized()
         likeThisLabel.text = "Please like this app".localized()
         changeLanguageButton.setTitle("Change Language".localized(), for: .normal)
+        
+        let currentYear = Calendar.current.component(.year, from: Date())
+        print(currentYear)
+        currentDateMonthLabel.text = "Current Year".localizeWith(String(describing: currentYear))
         
         LanguageSwitcher.delegate = self
 
@@ -70,6 +75,12 @@ extension String {
         }
         
         return bundle.localizedString(forKey: self, value: nil, table: nil)
+    }
+    
+    // localization with format arguments
+    
+    func localizeWith(_ args: CVarArg...) -> String {
+        return String(format: localized(), arguments: args)
     }
     
 }
